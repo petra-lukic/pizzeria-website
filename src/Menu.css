@@ -1,0 +1,93 @@
+#menu {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20vh;
+
+}
+.menu-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+.menu-card img {
+    width: 70%;
+}
+
+.menu-card h1 {
+    font-family: 'Long Cang', cursive;
+    color: #BA90C6;
+    text-transform: uppercase;
+    font-size: 3rem;
+    line-height: 5rem;
+    padding: 0 0.5rem;
+}
+
+.menu-card p, .prices span {
+    font-family: 'Gruppo', sans-serif;
+}
+
+.menu-card p {
+    color: black;
+    font-size: 1.5rem;
+    line-height: 3rem;
+    text-align: center;
+}
+
+.prices {
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.prices span {
+    color: #E8A0BF;
+    font-size: 1.5rem;
+}
+
+@media (orientation: landscape) {
+
+    .menu-cards {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        margin: 0 auto;
+        padding: 4rem 0;
+    }
+
+    .menu-card {
+        height: 80vh;
+    }
+
+    .menu-card:nth-child(3n+2) {
+        border-left: 1px solid #E8A0BF;
+        border-right: 1px solid #E8A0BF;
+    }
+
+    .menu-card:nth-last-child(n+3) {
+        border-bottom: 1px solid #E8A0BF;
+    }
+
+}
+
+@media (orientation: portrait) {
+    .menu-cards {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu-card:not(:nth-child(1)) {
+        padding-top: 4rem;
+        margin-top: 4rem;
+        border-top: 1px solid #E8A0BF;
+    }
+
+}

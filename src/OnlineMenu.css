@@ -1,0 +1,39 @@
+.online-menu {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.store img{
+    width: 3rem;
+    border-radius: 0;
+    margin-left: 3rem;
+}
+
+@media (orientation:landscape) {
+
+    .online-menu {
+        height: 100vh;
+        padding-top: 20vh;
+    }
+
+    .online-menu-items {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+}
+
+@media (orientation: portrait) {
+    .online-menu-items {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+}

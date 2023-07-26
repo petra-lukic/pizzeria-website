@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Gruppo&family=Long+Cang&display=swap');
+
+
+* {
+  font-size: 62.5%;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+  overflow-x: hidden;
+  cursor: url("./images/pizza-cursor.png"), auto;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #FDF4F5;
+}
+
+a {
+  text-decoration: none;
+}
+
+
+/*- - - - - scroll bar - - - - - */
+
+::-webkit-scrollbar {
+  width: 0.5rem;
+}
+
+::-webkit-scrollbar-track {
+  background: #eeeeee;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #E8A0BF;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background:#BA90C6;
+}

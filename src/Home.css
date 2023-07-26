@@ -1,0 +1,71 @@
+.main {
+    width: 100%;
+    padding: 0 2rem;
+    padding-top: 20vh;
+}
+
+.main h1 {
+    font-size: 5rem;
+    line-height: 8rem;
+    color: #E8A0BF;
+}
+
+.ciao {
+    font-size: 6rem;
+    font-family: 'Long Cang', cursive;
+    color: #BA90C6;
+}
+
+.main h2 {
+    font-size: 3rem;
+    line-height: 8rem;
+    color: #C0DBEA;
+}
+
+
+.naslov {
+    color: #E8A0BF;
+    font-size: 4rem;
+    font-family: 'Gruppo', sans-serif;
+}
+
+
+
+@media (orientation: landscape) {
+
+    .main {
+        height: 100vh;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    #pizza-home-picture {
+        width: 35%;
+        aspect-ratio: 1/1;
+    }
+
+}
+
+@media (orientation: portrait) {
+
+    .main {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .main h1, .main h2 {
+        text-align: center;
+    }
+
+    #pizza-home-picture {
+        width: 100%;
+        aspect-ratio: 1/1;
+    }
+
+    .naslov {
+        line-height: 15rem;
+    }
+}

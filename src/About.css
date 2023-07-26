@@ -1,0 +1,64 @@
+#about {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20vh;
+}
+
+.info p {
+    font-size: 3rem;
+    font-family: 'Gruppo', sans-serif;
+    line-height: 4rem;
+}
+
+.info span {
+    font-size: 4rem;
+    font-family: 'Long Cang', cursive;
+    color: #BA90C6;
+}
+
+@media (orientation: landscape) {
+    #about {
+        height: 100vh;
+    }
+
+    .info {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .info-img {
+        width: 35%;
+        border-radius: 2rem;
+        object-fit: cover;
+    }
+
+    .info p {
+        width: 50%;
+    }
+
+}
+
+@media (orientation: portrait) {
+    
+    .info {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .info-img {
+        width: 90%;
+        border-radius: 2rem;
+        object-fit: cover;
+    }
+
+    .info p {
+        width: 90%;
+        margin: 2rem 0;
+    }
+}
